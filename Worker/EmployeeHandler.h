@@ -13,14 +13,14 @@ public:
 	void ShowAllSalaryInfo() const {
 		for (int i = 0; i < empNum; i++)
 		{
-			//empList[i]->ShowSalaryInfo();
+			empList[i]->ShowSalaryInfo();
 		}
 	}
 	void ShowTotalSalary() const {
 		int sum = 0;
 		for (int i = 0; i < empNum; i++)
 		{
-			//sum += empList[i]->GetPay();
+			sum += empList[i]->GetPay();
 		}
 		std::cout << "salary sum: " << sum << "\n";
 	}
