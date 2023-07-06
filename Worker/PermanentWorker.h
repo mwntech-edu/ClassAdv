@@ -1,16 +1,13 @@
 #pragma once
-#include <iostream>
-class PermanentWorker {
+#include "Employee.h"
+class PermanentWorker : public Employee{
 private:
-	char name[100];
 	int salary;
 public:
-	PermanentWorker(char const* name, int money) : salary(money) {
-		strcpy_s(this->name, strlen(name)+1, name);
-	}
+	PermanentWorker(char const* name, int money) : Employee(name), salary(money) {}
 	int GetPay() const { return salary; }
 	void ShowSalaryInfo() const {
-		std::cout << "name: " << name << "\n";
+		ShowYourName();
 		std::cout << "salary: " << GetPay() << "\n\n";
 	}
 };

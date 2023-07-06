@@ -1,9 +1,9 @@
 #include "EmployeeHandler.h"
 using namespace std;
 int main() {
-	PermanentWorker* emp1 = new PermanentWorker("A", 300);
-	PermanentWorker* emp2 = new PermanentWorker("B", 350);
-	PermanentWorker* emp3 = new PermanentWorker("C", 270);
+	Employee* emp1 = new PermanentWorker("A", 300);
+	Employee* emp2 = new SalesWorker("B", 100, 0.1f);
+	Employee* emp3 = new TemporaryWorker("C", 1);
 	EmployeeHandler handler;
 	handler.AddEmployee(emp1);
 	handler.AddEmployee(emp2);

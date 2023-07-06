@@ -1,25 +1,26 @@
 #pragma once
-#include "PermanentWorker.h"
+#include "SalesWorker.h"
+#include "TemporaryWorker.h"
 class EmployeeHandler {
 private:
-	PermanentWorker* empList[50];
+	Employee* empList[50];
 	int empNum;
 public:
 	EmployeeHandler() : empNum(0) {}
-	void AddEmployee(PermanentWorker* emp) {
+	void AddEmployee(Employee* emp) {
 		empList[empNum++] = emp;
 	}
 	void ShowAllSalaryInfo() const {
 		for (int i = 0; i < empNum; i++)
 		{
-			empList[i]->ShowSalaryInfo();
+			//empList[i]->ShowSalaryInfo();
 		}
 	}
 	void ShowTotalSalary() const {
 		int sum = 0;
 		for (int i = 0; i < empNum; i++)
 		{
-			sum += empList[i]->GetPay();
+			//sum += empList[i]->GetPay();
 		}
 		std::cout << "salary sum: " << sum << "\n";
 	}
