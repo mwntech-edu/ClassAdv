@@ -4,12 +4,7 @@ int main() {
 	using mystd::cout;
 	using mystd::endl;
 
-	cout << "Simple String";
-	cout << endl;
-	cout << 3.14;
-	cout << endl;
-	cout << 123;
-	endl(cout);
+	cout << "Simple String " << 3.14 << endl << " num : " << 123 << endl;
 
 	return 0;
 }
