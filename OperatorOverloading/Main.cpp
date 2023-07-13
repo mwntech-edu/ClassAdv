@@ -1,5 +1,6 @@
-#include <iostream>
-using namespace std;
+//#include <iostream>
+#include "MyStd.h"
+using namespace mystd;
 class Point {
 private:
 	int xpos, ypos;
@@ -24,6 +25,7 @@ public:
 	friend Point& operator--(Point& ref);
 	friend const Point operator--(Point& ref, int);
 	friend Point operator*(int times, Point& ref);
+	friend ostream& operator<<(ostream&, const Point&);
 };
 Point operator-(const Point& pos1, const Point& pos2) {
 	Point pos(pos1.xpos - pos2.xpos, pos1.ypos - pos2.ypos);
@@ -40,6 +42,11 @@ Point operator*(int times, Point& ref) {
 	//return pos;
 	return ref * times;	//ref.operator*(times);
 }
+ostream& operator<<(ostream& os, const Point& pos) {
+	os << '[' << pos.xpos << ", " << pos.ypos << ']' << endl;
+	return os;
+}
+
 int main() {
 	Point pos1(3, 4);
 	Point pos2(10, 20);
@@ -63,5 +70,7 @@ int main() {
 	pos1.ShowPosition();
 	pos1_2 = 3 * pos1_2;
 	pos1_2.ShowPosition();
+	cout << "My pos1 : " << pos1 << endl;
+
 	return 0;
 }
