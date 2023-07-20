@@ -1,5 +1,5 @@
-//#ifndef _POINT_CPP_
-//#define _POINT_CPP_
+#ifndef _POINT_CPP_
+#define _POINT_CPP_
 
 #include "Point.h"
 
@@ -10,4 +10,4 @@ template <typename T>
 void Point<T>::ShowPosition() const {
 	std::cout << '[' << xpos << ", " << ypos << ']' << std::endl;
 }
-//#endif
+#endif

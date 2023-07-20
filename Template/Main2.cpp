@@ -1,6 +1,3 @@
-
-#include "Point.cpp"
-#include "Point.h"
 #include "Point.cpp"
 
 int main() {
