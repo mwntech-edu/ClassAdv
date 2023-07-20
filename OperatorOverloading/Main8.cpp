@@ -5,6 +5,7 @@ class Number {
 private:
 	int num;
 public:
+	//Number() : num(20) {}
 	Number(int n = 0) : num(n) {
 		cout << "Number(int n=0)" << endl;
 	}
