@@ -1,4 +1,7 @@
+
+#include "Point.cpp"
 #include "Point.h"
+#include "Point.cpp"
 
 int main() {
 	Point<int> pos1(3, 4);
