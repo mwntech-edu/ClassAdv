@@ -11,6 +11,13 @@ public:
 	}
 };
 
+template <typename T>
+void ShowStaticValue() {
+	static T num = 0;
+	num += 1;
+	cout << num << " ";
+}
+
 int main() {
 	SimpleArray<int, 5> i5arr1;
 	SimpleArray<int, 7> i7arr1;
@@ -22,5 +29,19 @@ int main() {
 		cout << arr[i] << " ";
 	}
 	cout << endl;
+
+	ShowStaticValue<int>();
+	ShowStaticValue<int>();
+	ShowStaticValue<int>();
+	cout << endl;
+	ShowStaticValue<long>();
+	ShowStaticValue<long>();
+	ShowStaticValue<long>();
+	cout << endl;
+	ShowStaticValue<double>();
+	ShowStaticValue<double>();
+	ShowStaticValue<double>();
+	cout << endl;
+	ShowStaticValue<int>();
 	return 0;
 }
