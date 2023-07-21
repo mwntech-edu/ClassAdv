@@ -130,6 +130,7 @@
     <ClCompile Include="Main1.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Main2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
