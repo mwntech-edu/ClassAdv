@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Template", "Template\Templa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exception", "Exception\Exception.vcxproj", "{0D10B848-789D-488F-B1B6-8FBCEA3CB9D4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Casting", "Casting\Casting.vcxproj", "{633BFF3F-D1C4-4851-B2B1-8E36CAA1FA23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{0D10B848-789D-488F-B1B6-8FBCEA3CB9D4}.Release|x64.Build.0 = Release|x64
 		{0D10B848-789D-488F-B1B6-8FBCEA3CB9D4}.Release|x86.ActiveCfg = Release|Win32
 		{0D10B848-789D-488F-B1B6-8FBCEA3CB9D4}.Release|x86.Build.0 = Release|Win32
+		{633BFF3F-D1C4-4851-B2B1-8E36CAA1FA23}.Debug|x64.ActiveCfg = Debug|x64
+		{633BFF3F-D1C4-4851-B2B1-8E36CAA1FA23}.Debug|x64.Build.0 = Debug|x64
+		{633BFF3F-D1C4-4851-B2B1-8E36CAA1FA23}.Debug|x86.ActiveCfg = Debug|Win32
+		{633BFF3F-D1C4-4851-B2B1-8E36CAA1FA23}.Debug|x86.Build.0 = Debug|Win32
+		{633BFF3F-D1C4-4851-B2B1-8E36CAA1FA23}.Release|x64.ActiveCfg = Release|x64
+		{633BFF3F-D1C4-4851-B2B1-8E36CAA1FA23}.Release|x64.Build.0 = Release|x64
+		{633BFF3F-D1C4-4851-B2B1-8E36CAA1FA23}.Release|x86.ActiveCfg = Release|Win32
+		{633BFF3F-D1C4-4851-B2B1-8E36CAA1FA23}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
