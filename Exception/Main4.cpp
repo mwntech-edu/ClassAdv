@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void SimpleFuncThree() throw (int, char) {
+void SimpleFuncThree() throw (int, char) { // throw (int, char)
 	cout << " Func Three " << endl;
 	//throw -1;
 	//throw 'K';
