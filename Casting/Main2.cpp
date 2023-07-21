@@ -12,7 +12,7 @@ int main() {
 	cout << result3 << endl;
 
 	const int num = 20;
-	int* ptr = (int*)&num;
+	int* ptr = const_cast<int*>(&num); //int* ptr = (int*)&num;
 	*ptr = 30;
 	cout << &num << " ";
 	cout << num << endl;
